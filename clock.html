@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Funny clock</title>
+    <link rel="stylesheet" href="clock.css">
+  </head>
+  <body>
+    <div class="head_box">
+      <h1>What time is it now?</h1>
+    </div>
+    <div class="main_box">
+      <div class="watch_box">
+        <div id="clock">
+          <span class = "hour">hh</span> : <span class = "min">mm</span>:
+          <span class= "sec">ss</span>
+        </div>
+      </div>
+      <div class="control_box">
+        <button class="start" type="button" onclick="clockStart()">Start</button>
+        <button class="stop"type="button" onclick="clockStop()">Stop</button>
+      </div>
+    </div>
+    <div class="prescription_box">
+      <div id="user"></div>
+    </div>
+    <script src="clock.js"></script>
+  </body>
+</html>
