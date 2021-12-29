@@ -1,4 +1,4 @@
-let name = prompt('Your name is...');
+
 function update() {
   let clock = document.getElementById( "clock");
   let date = new Date();
@@ -22,7 +22,4 @@ function update() {
   function clockStop() {
     clearInterval( timerId);
     timerId = null;
-    let user = document.getElementById("user");
-    user.innerHTML = 'Thank' + ' ' + 'you' + ' ' + 'for' + ' ' + ' using' +
-     ' '+ 'the'+ ' ' + 'watch' +' ' +  name + '!';
   }
