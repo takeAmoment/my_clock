@@ -13,13 +13,14 @@ function update() {
   if (seconds < 10) seconds = '0' + seconds;
   clock.children[2].innerHTML = seconds;
 }
-  let timerId;
+  
+let timerId;
 
-  function clockStart() {
+function clockStart() {
     timerId = setInterval (update, 1000);
     update();
-  }
-  function clockStop() {
+}
+function clockStop() {
     clearInterval( timerId);
     timerId = null;
-  }
+}
